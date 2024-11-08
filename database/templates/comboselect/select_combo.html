@@ -1,0 +1,550 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chọn combo | Starlight</title>
+    <!-- Các thẻ meta và thông tin khác -->
+</head>
+    <!-- Site information -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name='revisit-after' content='7 days'/><title>Chọn combo | Starlight</title><meta itemprop='name' content='Chọn combo | Starlight'><meta property='og:title' content='Chọn combo | Starlight' /> <meta name='twitter:title' content ='Chọn combo | Starlight'/><meta name='twitter:card' content ='summary'/><meta name='description' content ='đặt vé xem phim, đặt vé xem phim Starlight'/><meta name='twitter:description' content ='đặt vé xem phim, đặt vé xem phim Starlight'/><meta itemprop='description' content='đặt vé xem phim, đặt vé xem phim Starlight' /><meta property='og:description' content='đặt vé xem phim, đặt vé xem phim Starlight' /> <meta itemprop='image' content='https://www.starlight.vn'><meta property='og:image' content='https://www.starlight.vn'/><meta name='twitter:image' content='https://www.starlight.vn'/><meta property='og:locale' content='vi_VN' /><link rel='alternate' hreflang='vi_VN' href='https://starlight.vn/dat-ve-combo.html?film_name=NGÀY XƯA CÓ MỘT CHUYỆN TÌNH (T16)&time_id=e19026ce-ce28-40e4-a34f-2f9dff7904b3&date=05/11/2024&format=2D&room=04&image=https://starlight.vn/Areas/Admin/Content/Fileuploads/images/Poster2024/nga-xua-mot-chuyen-tinh.jpg&time=19:30&server_id=1'><meta property='og:type' content='website' /><meta name='keywords' content='đặt vé xem phim, đặt vé xem phim Starlight, ưu đãi lớn khi xem phim, xem phim nhận ưu đãi, phim mới nhất, xem phim giá rẻ, giá vé tốt cho sinh viên'/><meta property='og:site_name' content='StarLightSITE' /><meta name='twitter:site' content ='StarLightSITE'/><meta name='robots' content='index,follow'/><meta property='fb:admins' content='' />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,bold,100,200,300,400,500,600,700,800" rel="stylesheet">
+    <!-- External CSS --> 
+    <body style="background: url('{% static 'Content/img/bgs6.jpg' %}'); background-size: cover;">
+    <link rel="stylesheet" href="{% static 'Content/Stylebf25.css' %}">
+    <script src="{% static 'js/film-script.js' %}" defer></script>
+    <!-- Google Fonts -->
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico">
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+    <script>
+        var OneSignal = window.OneSignal || [];
+        OneSignal.push(function () {
+            OneSignal.init({
+                appId: "d17589a4-68d3-451d-98d8-ffef22409a32",
+            });
+        });
+    </script>
+</head>
+
+<body>
+<div class="main-content">
+    <!-- Preloader -->
+    <div style="display:none" class="main-reloader">
+        <div class="loader"></div>
+    </div>
+    <!-- Preloader End -->
+    <!-- Main Header -->
+    
+<header class="filmoja-header-area">
+
+    <!-- Header Top Area Start -->
+    <div class="header-top-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-3 col-sm-12">
+                    <div class="header-top-social">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus-square"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                            <li><a href="#"><i class="fa fa-pinterest-square"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-9 col-sm-12">
+                    <div class="header-top-menu">
+                        <ul>
+                            
+                            <li><a href="/cau-hoi-thuong-gap.html">FAQ's</a></li>
+                            
+
+<li class="user-loged" style="border: 1px solid #f37737;">
+    <a style="color:#fff" title="Th&#225;i Tuấn T&#224;i" href="#">Th&#225;i Tuấn T&#224;i</a>
+
+    <ul class="info_option">
+        <li><a href="/thong-tin-tai-khoan.html"><i class="fa fa-user"></i>&nbsp; Th&#244;ng tin</a></li>
+        <li><a href="#" onclick="logOut()"><i class="fa fa-sign-out"></i>&nbsp; Đăng xuất</a></li>
+    </ul>
+</li>
+
+
+<script>
+    function logOut() {
+        $.ajax({
+            url: "/MemberRegister/Logout",
+            type: "POST",
+            traditional: true,
+            datatype: "json",
+            contentType: 'application/json; charset=utf-8',
+            success: function (result) {
+                //alert(result);
+                if (result === "true" || result === true) {
+                    location.href = "/";
+                } else {
+                }
+            },
+            error: function () {
+                return false;
+            }
+        });
+    }
+</script>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header Top Area End -->
+    <!-- Main Header Area Start -->
+    <div class="main-header-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="site-logo">
+                        <a href="/">
+                            <img src="{% static 'img/logo.png' %}" alt="Logo">
+                        </a>
+                    </div>
+                    <!-- Responsive Menu Start -->
+                    <div class="filmoja-responsive-menu"></div>
+                    <!-- Responsive Menu End -->
+                </div>
+
+                <div class="col-lg-9">
+                    <div class="mainmenu">
+                        <nav>
+                            <ul id="responsive_navigation">
+                                <!-- Mobile Search Start -->
+                                <!-- Mobile Search End -->
+                                <li><a href="/">Trang chủ</a></li>
+                                <li>
+                                    <a href="/lich-chieu.html">Lịch chiếu</a>
+                                </li>
+                                <li><a href="/packets.html">Mua Gói</a></li>
+                                <li>
+                                    <a href="#">Phim</a>
+                                    <ul>
+                                        <li><a href="/phim.html">Phim Đang Chiếu</a></li>
+                                        <li><a href="/phim-sap-chieu.html">Phim Sắp Chiếu</a></li>
+
+                                    </ul>
+                                </li>
+                                <li><a href="/uu-dai.html">Khuyến Mãi</a></li>
+                                <li><a href="/tin-tuc.html">Điện Ảnh</a></li>
+                                <li><a href="/lien-he.html">Liên hệ</a></li>
+                                <li><a href="/tuyen-dung.html">Tuyển dụng</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Main Header Area End -->
+
+</header>
+<script>
+    function openNav() {
+        document.getElementById("mobileMenu").style.width = "300px";
+    }
+
+    function closeNav() {
+        document.getElementById("mobileMenu").style.width = "0";
+    }
+</script>
+
+    <!-- Main Header End -->
+    
+    
+<section class="filmoja-breadcrumb-area section_15 container" style="background: #22272b; max-width: 100% !important; border-bottom: 0.1px solid #fff;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="breadcrumb-box">
+                    <h2>Bước 2: Chọn bắp nước</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="feature-section padding-top-20 padding-bottom-5 container" style="background: #22272b; max-width: 100% !important; overflow-x: auto; ">
+                    {% for combo in combos %}
+                    <div class="single-movie-list col-lg-4 col-md-6 col-sm-12" style="float:left">
+                        <div class="row">
+                            <div>
+                                <img src="{% static 'img/combo-doi.jpg' %}" style="height:auto !important" alt="Combo image">
+                                <div class="col-lg-12">
+                                    <h3 style="font-size: 25px; font-weight: bold; color: #f37737;">{{ combo.ten_combo }}</h3>
+                                    <p class="list-genre">Mô tả chi tiết về combo nếu có thể</p>
+                                    <p class="list-genre">{{ combo.gia_combo|floatformat:0 }} đ</p>
+                                    <div class="col-md-12 col-sm-12">
+                                        <hr class="space-10">
+                                        <div class="row row-combo" style="width: 100%; display: flex; justify-content: center;">
+                                            <p style="width: 50px; height: 50px; background: #f37737; color: #fff; text-align: center; line-height: 50px; font-size: 20px; font-weight: bold; border-radius: 5px; padding: 0; margin: 5px; cursor: pointer;" onclick="minusCombo('cb-{{ combo.id }}')">-</p>
+                                            <input type="number" id="cb-{{ combo.id }}" data-price="{{ combo.gia_combo }}" style="width: 50px; border-radius: 5px; text-align: center; height: 50px; margin: 5px;" readonly="readonly" value="0" min="0" max="99">
+                                            <p style="width: 50px; height: 50px; background: #f37737; color: #fff; text-align: center; line-height: 50px; font-size: 20px; font-weight: bold; border-radius: 5px; padding: 0; margin: 5px; cursor: pointer;" onclick="plusCombo('cb-{{ combo.id }}')">+</p>
+                                        </div>                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% empty %}
+                    <p>Không có combo nào để hiển thị.</p>
+                    {% endfor %}
+    </div>
+</div>
+
+<section class="categories-section padding-top-20 padding-bottom-40 margin-bottom-10 container bg-main info-map" style="box-shadow: 0px -2px 5px 0px #333; position: fixed; width: 100%; border: 0; left: 0; right: 0; height: 120px; bottom: 0; background: #fff; max-width: 100% !important; z-index: 999; padding-top: 10px;">
+    <div class="container">
+        <div class="row ">
+            <!-- section container -->
+            <div class="col-lg-4">
+                <h5 style="margin-bottom: 15px; text-transform: uppercase; font-weight: 500; color: #444444; text-decoration: underline; background-image: url({% static "img/tag.png" %} ); -webkit-background-size: 21px 6px; background-size: 21px 6px; background-position: left center; background-repeat: no-repeat; padding-left: 30px;">Combo Đ&#227; Chọn</h5>
+                <div class="note-color">
+                    <div class="note-col" id="total_ticket" style="font-size: 17px;"></div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="col-lg-5 col-md-6 col-sm-12">
+                <div class="col-lg-12">
+                    <h5 style="margin-bottom: 15px; text-transform: uppercase; font-weight: 500; color: #444444; text-decoration: underline; background-image: url({% static "img/tag.png" %} );-webkit-background-size: 21px 6px; background-size: 21px 6px; background-position: left center; background-repeat: no-repeat; padding-left: 30px;">Th&#224;nh tiền</h5>
+                    <div class="note-color">
+                        <div class="note-col" id="total_price" style="font-size: 17px;"></div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            {% comment %} <div class="col-lg-3 col-md-6 col-sm-12" style="align-items: center; display: flex;">
+                <div class="note-color" style="width:100%">
+                    <div class="note-col" style="width:100%">
+                        <a href="{% url 'confirm_payment' %}" style="border-radius: 0; padding: 13px; background: #f37737; border-color: yellow; width: 70%; color: #fff;" class="btn btn-success">Tiếp theo</a>
+                    </div>
+                </div>
+            </div> {% endcomment %}
+            
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    
+</section>
+<script>
+    
+    function nextStep(uri) {
+        location.href = uri + location.search;
+    }
+    var total = 0;
+    function minusCombo( id, cid, price,name,discount) {
+        $(".main-reloader").css("display", "block");
+        var number = parseInt($("#" + id).val());
+        if (number > 0)
+            number -= 1;
+        var data = '{"comboId":"' + cid + '","qty":' + number + ',"price":' + price + ',"discount":' + discount + '}';
+        $.ajax({
+            url: "/BookTicket/UpdateBookTicketComboInfor",
+            type: "POST",
+            data: data,
+            traditional: true,
+            dataType: "json",
+            contentType: 'application/json; charset=utf-8',
+            success: function (data) {
+                //alert(data);
+                if (data == "true" && data != null) {
+                    if (number > 0) {
+                        var html = '<p style="letter-spacing: 3px;color: #333;" id="p' + cid + '">' + name + ' x ' + number + '</p>';
+                        if ($("#total_ticket").find("#p" + cid).length <= 0) {
+                            $("#total_ticket").append(html);
+                            //alert(html);
+                        } else {
+                            $("#p" + cid).html(name+' - '+number)
+                        }
+                    } else {
+                        $("#p" + cid).remove();
+                    }
+                    if (total > 0)
+                        total -= price;
+                    $("#total_price").html(total.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,") + " đ");
+                    setTimeout(function () {
+                        $(".main-reloader").css("display", "none");
+                    }, 500);
+                    $("#" + id).val(number);
+                    return false;
+                } else {
+
+                    $(".main-reloader").css("display", "none");
+                    return false;
+                }
+            },
+            error: function () {
+                $.sweetModal({
+                    content: 'Đã xảy ra lỗi khi chọn combo. Vui lòng tải lại trang và tiếp tục!',
+                    title: '',
+                    icon: $.sweetModal.ICON_WARNING,
+                    theme: $.sweetModal.THEME_DARK,
+                    buttons: {
+                        'OK': {
+                            classes: 'redB'
+                        }
+                    }
+                });
+                $(".main-reloader").css("display", "none");
+                return false;
+            }
+        });
+    }
+    function plusCombo(id, cid, price, name, discount) {
+        $(".main-reloader").css("display", "block");
+        var number = parseInt($("#" + id).val());
+        if (number < 99)
+            number += 1;
+        var data = '{"comboId":"' + cid + '","qty":' + number + ',"price":' + price + ',"discount":'+discount+'}';
+        $.ajax({
+            url: "/BookTicket/UpdateBookTicketComboInfor",
+            type: "POST",
+            data: data,
+            traditional: true,
+            dataType: "json",
+            contentType: 'application/json; charset=utf-8',
+            success: function (data) {
+                //alert(data);
+                if (data == "true" && data != null) {
+                    if (number > 0) {
+                        var html = '<p style="letter-spacing: 3px;color: #333;" id="p' + cid + '">' + name + ' x ' + number + '</p>';
+                        if ($("#total_ticket").find("#p" + cid).length <= 0) {
+                            $("#total_ticket").append(html);
+                            //alert(html)
+                        } else {
+                            $("#p" + cid).html(name + ' - ' + number)
+                        }
+                    } else {
+                        $("#p" + cid).remove();
+                    }
+                    total += price;
+                    $("#total_price").html(total.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,")+" đ");
+                    setTimeout(function () {
+                        $(".main-reloader").css("display", "none");
+                    }, 500);
+                    $("#" + id).val(number);
+                    return false;
+                } else {
+
+                    $(".main-reloader").css("display", "none");
+                    return false;
+                }
+            },
+            error: function () {
+                $.sweetModal({
+                    content: 'Đã xảy ra lỗi khi chọn combo. Vui lòng tải lại trang và tiếp tục!',
+                    title: '',
+                    icon: $.sweetModal.ICON_WARNING,
+                    theme: $.sweetModal.THEME_DARK,
+                    buttons: {
+                        'OK': {
+                            classes: 'redB'
+                        }
+                    }
+                });
+                $(".main-reloader").css("display", "none");
+                return false;
+            }
+        });
+    }
+        // Hàm tăng số lượng
+        function plusCombo(id) {
+            const input = document.getElementById(id);
+            let number = parseInt(input.value) || 0;
+            if (number < 99) {
+                input.value = number + 1;
+                updateTotal();  // Cập nhật tổng tiền sau khi thay đổi số lượng
+            }
+        }
+
+        // Hàm giảm số lượng
+        function minusCombo(id) {
+            const input = document.getElementById(id);
+            let number = parseInt(input.value) || 0;
+            if (number > 0) {
+                input.value = number - 1;
+                updateTotal();  // Cập nhật tổng tiền sau khi thay đổi số lượng
+            }
+        }
+        // Hàm tính tổng tiền
+        function updateTotal() {
+            let total = 0;
+            document.querySelectorAll('input[id^="cb-"]').forEach(input => {
+                const price = parseInt(input.getAttribute('data-price')) || 0; // Lấy giá từ thuộc tính data-price
+                const quantity = parseInt(input.value) || 0;
+                total += price * quantity;
+            });
+            document.getElementById("total_price").innerText = total.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " đ";
+        }
+</script>
+</div>
+
+    <!-- Footer Start -->
+    
+<footer class="filmoja-footer-area">
+    <div class="footer-top-area section_70">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="single-footer-widget">
+                        <a href="#"><img src="{% static "img/footer_logo.png" %}" alt="footer logo" /></a>
+                        
+                        <div class="footer-contact">
+                            <p>Support: <a href="#">support@starlight.vn</a></p>
+                            <p>Hotline: <a href="tell:1900 1722">1900 1722</a></p>
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="single-footer-widget">
+                        <h3>Chính sách</h3>
+                        <ul>
+                                    <li><a href="/chinh-sach/dieu-khoan-chung-1.html"><i class="fa fa-angle-double-right"></i>Điều khoản chung</a></li>
+                                    <li><a href="/chinh-sach/chinh-sach-thanh-toan-2.html"><i class="fa fa-angle-double-right"></i>Ch&#237;nh s&#225;ch thanh to&#225;n</a></li>
+                                    <li><a href="/chinh-sach/chinh-sach-giao-nhan-3.html"><i class="fa fa-angle-double-right"></i>Ch&#237;nh S&#225;ch Giao Nhận</a></li>
+                                    <li><a href="/chinh-sach/bao-mat-thong-tin-4.html"><i class="fa fa-angle-double-right"></i>Bảo Mật Th&#244;ng Tin</a></li>
+                                    <li><a href="/chinh-sach/kiem-hang-doi-tra-hoan-tien-5.html"><i class="fa fa-angle-double-right"></i>Kiểm H&#224;ng, đổi trả/ho&#224;n tiền</a></li>
+                        </ul>
+                    </div>
+                </div>
+               
+                <div class="col-lg-4 col-sm-6">
+                    <div class="single-footer-widget">
+                        <h3>Download App</h3>
+                        <div class="footer-app-box">
+                            <p>Tải ngay ứng dụng đặt vé online cho dế yêu của bạn !</p>
+                            <ul class="apps-list">
+                                <li><a href="https://play.google.com/store/apps/details?id=com.kingprocompany.starlightcinemas"><img src="{% static "img/app-1.jpg" %}" alt="app image" /></a></li>
+                                <li><a href="https://apps.apple.com/us/app/starlight-cinemas/id1588865280"><img src="{% static "img/app-2.jpg" %}" alt="app image" /></a></li>
+                            </ul>
+                            <ul class="apps-list">
+                                <li><a href="http://online.gov.vn/Home/WebDetails/118483" target="_blank"><img alt="" title="" src="{% static "img/congthuong.png" %} "></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h3 style="color:#fff">CÔNG TY CỔ PHẦN ENTERTAINMENT 2020</h3>
+            <p>
+                Giấy chứng nhận đăng kí doanh nghiệp công ty cổ phần: 0402021264 đăng ký lần đầu ngày 03/01/2020
+            </p>
+            <p>
+                Cơ quan cấp : Phòng Đăng ký kinh doanh - Sở kế hoạch và đầu tư Thành phố Đà Nẵng
+            </p>
+            <p>
+                Địa chỉ: Tầng 4, Tòa nhà Nguyễn Kim, 46 Điện Biên Phủ, TP. Đà Nẵng, Việt Nam
+            </p>
+            <p style="color:#fff">
+                Hotline (Đường dây nóng) : <a href="tel:19001722">19001722</a>
+            </p>
+        </div>
+    </div>
+    <div class="copyright-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="copyright-box">
+                        <p>2019 © StarLight. All rights reserved - Design by <a href="https://kingpro.vn">KingPro</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<section>
+    <div id="mobile-menu">
+        <ul>
+            <li><a class="" href="/" style="background-color:#2b2b31;"><i class="fa fa-home"></i><br />Trang Chủ</a></li>
+            <li><p onclick="toggleMBooking()" style="background-color: #2b2b31;"><i class="fa fa-ticket"></i><br /> Đặt V&#233;</p></li>
+            <li><a class="" href="/lich-chieu.html" style="background-color: #2b2b31;"><i class="fa fa-film"></i><br /> Lịch Chiếu</a></li>
+            <li><a href="/uu-dai.html" style="background-color: #2b2b31;"><i class="fa fa-gift"></i><br /> Ưu Đ&#227;i</a></li>
+        </ul>
+    </div>
+
+</section>
+<section>
+    <div class="mobile-book">
+        <select class="slMTheater" onchange="selectMServer(this)">
+            <option value="0">Rạp</option>
+        </select>
+        <select class="slMFilm" onchange="selectMFilm(this)">
+            <option value="0">Phim</option>
+        </select>
+        <select class="slMDate" onchange="selectMDate(this)">
+            <option value="0">Ng&#224;y chiếu</option>
+        </select>
+        <select class="slMTime" onchange="selectMTime(this)">
+            <option value="0">Suất chiếu</option>
+        </select>
+        <a id="btnMBooking" onclick="btnMBooking()">Mua V&#233; Ngay</a>
+    </div>
+</section>
+
+
+<script>
+    function logOutMenu() {
+        $.ajax({
+            url: "/MemberRegister/Logout",
+            type: "POST",
+            traditional: true,
+            datatype: "json",
+            contentType: 'application/json; charset=utf-8',
+            success: function (result) {
+                //alert(result);
+                if (result === "true" || result === true) {
+                    location.href = "/";
+                } else {
+                }
+            },
+            error: function () {
+                return false;
+            }
+        });
+    }
+</script>
+<script>
+    function toggleMBooking() {
+        $(".mobile-book").toggleClass("show-mobile-book");
+    }
+</script>
+<!-- Load Facebook SDK for JavaScript -->
+
+    <div class="modal fade" id="adsImageModal" role="dialog" style="background: rgba(51, 51, 51, 0.46);">
+        <div class="modal-dialog" style="width:95%;max-width:95%;margin:100px auto;">
+            <!-- Modal content-->
+            <div class="modal-content" style="    max-width: 640px;margin: 0 auto;">
+                <div class="modal-body" style="padding:0">
+                    <img id="adsImage" style="    border: 3px solid #000;border-radius: 3px;width:100%" src="http://www.starlight.vn/Areas/Admin/Content/Fileuploads/images/POSTER/z2950019928727_f1e225b7c12d6c9e9cd4af710d7e685f.jpg" />
+                </div>
+            </div>
+        </div>
+    </div>
+    {% comment %} <script src="/Scripts/Style"></script>
+
+    <script src="/Scripts/js/film-script.js"></script> {% endcomment %}
+
+</body>
+</html>
