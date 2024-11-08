@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 66fc8fb0050d7f83b999d8fea1839d48552c9d22
 """
 URL configuration for PythFilm project.
 
@@ -14,6 +18,11 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+<<<<<<< HEAD
+=======
+from django.conf import settings
+from django.conf.urls.static import static
+>>>>>>> 66fc8fb0050d7f83b999d8fea1839d48552c9d22
 from django.contrib import admin
 from django.urls import path
 from database import views as database
@@ -25,7 +34,10 @@ urlpatterns = [
     path('phim/them/', views.them_phim, name='them_phim'),
     path('phim/sua/<int:id>/', views.sua_phim, name='sua_phim'),
     path('phim/xoa/<int:id>/', views.xoa_phim, name='xoa_phim'),
+<<<<<<< HEAD
     path('checkout/', views.check_out, name='check_out'),
+=======
+>>>>>>> 66fc8fb0050d7f83b999d8fea1839d48552c9d22
 
     # Đường dẫn cho quản lý người dùng
     path('nguoidung/', views.danh_sach_nguoi_dung, name='danh_sach_nguoi_dung'),
@@ -88,6 +100,7 @@ urlpatterns = [
     path('binh-luan/sua/<int:id>/', views.sua_binh_luan, name='sua_binh_luan'),
     path('binh-luan/xoa/<int:id>/', views.xoa_binh_luan, name='xoa_binh_luan'),
      
+<<<<<<< HEAD
     # Đường dẫn cho Web quản lý bán vé
     path('', views.quan_ly, name='quan_ly'),
 
@@ -105,3 +118,23 @@ urlpatterns = [
     #seat quan
     path('seats/', views.seat_selection, name='seat_selection'),
 ]
+=======
+     
+    # Đường dẫn cho Web quản lý bán vé
+    path('adminn', views.quan_ly, name='quan_ly'),
+
+    #register
+    path('register/', views.register, name='register'),
+
+    #login
+    path('login/', views.user_login, name='login'),
+    
+    path('', views.index, name='index'),
+    path('film/<int:phim_id>/', views.film_detail, name='film_detail'),
+    
+    
+        path('tao-xuat-chieu/', views.tao_xuat_chieu_tu_dong, name='tao_xuat_chieu'),
+]
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+>>>>>>> 66fc8fb0050d7f83b999d8fea1839d48552c9d22

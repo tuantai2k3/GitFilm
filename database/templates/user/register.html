@@ -62,8 +62,13 @@
                             <li><a href="cau-hoi-thuong-gap.html">FAQ's</a></li>
                             
 
+<<<<<<< HEAD
     <li><a href="dang-nhap.html" class="btn-member">Đăng nhập</a></li>
     <li><a href="dang-ky.html" class="btn-member">Đăng k&#253;</a></li>
+=======
+        <li><a href="{% url 'login'%}" class="btn-member">Đăng nhập</a></li>
+        <li><a href="{% url 'register'%}" class="btn-member">Đăng k&#253;</a></li>
+>>>>>>> 66fc8fb0050d7f83b999d8fea1839d48552c9d22
 
 
 <script>
@@ -165,6 +170,18 @@
                     <br>
                 </div>
                 <div class="col-md-9 register-right">
+<<<<<<< HEAD
+=======
+                    {% if messages %}
+    <div class="alert alert-info">
+        <ul>
+            {% for message in messages %}
+                <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endif %}
+>>>>>>> 66fc8fb0050d7f83b999d8fea1839d48552c9d22
     
                     <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
@@ -627,5 +644,8 @@
    
 </body>
 
+<<<<<<< HEAD
 <!-- Mirrored from starlight.vn/dang-ky.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 05 Nov 2024 01:21:39 GMT -->
+=======
+>>>>>>> 66fc8fb0050d7f83b999d8fea1839d48552c9d22
 </html>

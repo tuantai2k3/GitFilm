@@ -293,6 +293,7 @@ from django.db import models
 from django.core.validators import MinValueValidator, MaxValueValidator
 
 # Bảng Combo (Combo)
+<<<<<<< HEAD
 # class Combo(models.Model):
 #     ten_combo = models.CharField(max_length=100)  # Tên combo
 #     gia_combo = models.DecimalField(max_digits=10, decimal_places=2)  # Giá combo
@@ -305,6 +306,15 @@ class Combo(models.Model):
 
     def __str__(self):
         return self.ten_combo
+=======
+class Combo(models.Model):
+    ten_combo = models.CharField(max_length=100)  # Tên combo
+    gia_combo = models.DecimalField(max_digits=10, decimal_places=2)  # Giá combo
+
+    def __str__(self):
+        return f"{self.ten_combo} - {self.gia_combo}"
+
+>>>>>>> 66fc8fb0050d7f83b999d8fea1839d48552c9d22
 # Bảng Rạp Chiếu (Cinema)
 class RapChieu(models.Model):
     ten_rap = models.CharField(max_length=200)  # Tên rạp chiếu
@@ -332,12 +342,20 @@ class TheLoai(models.Model):
 # Bảng Phim (Movie)
 class Phim(models.Model):
     ten_phim = models.CharField(max_length=200)
+<<<<<<< HEAD
     the_loai = models.ManyToManyField(TheLoai)  # Một phim có thể thuộc nhiều thể loại
+=======
+    the_loai = models.ManyToManyField('TheLoai')  # Một phim có thể thuộc nhiều thể loại
+>>>>>>> 66fc8fb0050d7f83b999d8fea1839d48552c9d22
     dao_dien = models.CharField(max_length=100)
     dien_vien = models.TextField()
     thoi_luong = models.PositiveIntegerField()  # Thời lượng tính bằng phút
     tom_tat = models.TextField()
+<<<<<<< HEAD
     thumbnail = models.CharField(max_length=200)  # Link ảnh thumbnail của phim
+=======
+    thumbnail = models.ImageField(upload_to='thumbnails/')  # Đường dẫn lưu ảnh thumbnail
+>>>>>>> 66fc8fb0050d7f83b999d8fea1839d48552c9d22
     do_tuoi = models.PositiveIntegerField(validators=[MinValueValidator(0)], default=0)  # Độ tuổi được xem phim
 
     def __str__(self):
@@ -407,3 +425,7 @@ class BinhLuan(models.Model):
 
     def __str__(self):
         return f"Bình luận của {self.user_binh_luan.username} - {self.phim.ten_phim}"
+<<<<<<< HEAD
+=======
+
+>>>>>>> 66fc8fb0050d7f83b999d8fea1839d48552c9d22
